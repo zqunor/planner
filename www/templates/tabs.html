@@ -1,0 +1,30 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+
+<ion-view view-title="Planner"></ion-view>
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- 每日计划 -->
+  <ion-tab title="每日计划" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/daily">
+    <ion-nav-view name="tab-daily"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 月计划 -->
+  <ion-tab title="月计划" icon-off="ion-ios-compose-outline" icon-on="ion-ios-compose" href="#/tab/monthly">
+    <ion-nav-view name="tab-monthly"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 年计划 -->
+  <ion-tab title="年计划" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" href="#/tab/annual">
+    <ion-nav-view name="tab-annual"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 名言摘录 -->
+  <ion-tab title="名言摘录" icon-off="ion-ios-bookmarks-outline" icon-on="ion-ios-bookmarks" href="#/tab/words">
+    <ion-nav-view name="tab-words"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
